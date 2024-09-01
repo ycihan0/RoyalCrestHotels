@@ -1,3 +1,4 @@
+import "./Header.css";
 
 
 const Header = () => {
@@ -26,11 +27,11 @@ const Header = () => {
             </div>
           </div>
           <a className="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
+            <img src="src/assets/images/logo.png" alt="" />
           </a>
           <div className="user_option">
             <a href="#">
-              <img src="images/user-icon.png" alt="" />
+              <img src="src/assets/images/user-icon.png" alt="" />
             </a>
             <form className="form-inline my-2 my-lg-0  mb-3 mb-lg-0">
               <button className="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
@@ -67,10 +68,10 @@ const Header = () => {
       <div className="img-box">
         <div className="play_btn">
           <a href="#">
-            <img src="images/play.png" alt="" />
+            <img src="src/assets/images/play.png" alt="" />
           </a>
         </div>
-        <img src="images/slider-img.png" className="slider-img" alt="" />
+        <img src="src/assets/images/slider-img.png" className="slider-img" alt="" />
       </div>
     </section>
 

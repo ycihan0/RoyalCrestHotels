@@ -4,143 +4,46 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-       <div className="hero_area">
- 
-    <header className="header_section">
-      <div className="container-fluid">
-        <nav className="navbar navbar-expand-lg custom_nav-container">
-          <div className="fk_width" id="">
-            <div className="custom_menu-btn">
-              <button >
-                <span className="s-1"> </span>
-                <span className="s-2"> </span>
-                <span className="s-3"> </span>
-              </button>
+      
+    <nav className="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="templateux-navbar">
+      <div className="container">
+        <a className="navbar-brand" href="index.html"><span className="text-danger">Red</span>Planet</a>
+        <div className="site-menu-toggle js-site-menu-toggle  ml-auto"  data-aos="fade" data-toggle="collapse" data-target="#templateux-navbar-nav" aria-controls="templateux-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div id="myNav" className="overlay">
-              <div className="overlay-content">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="package.html">Packages</a>
-                <a href="testimonial.html">Testimonial</a>
-              </div>
-            </div>
-          </div>
-          <a className="navbar-brand" href="index.html">
-            <img src="src/assets/images/logo.png" alt="" />
-          </a>
-          <div className="user_option">
-            <a href="#">
-              <img src="src/assets/images/user-icon.png" alt="" />
-            </a>
-            <form className="form-inline my-2 my-lg-0  mb-3 mb-lg-0">
-              <button className="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-            </form>
-          </div>
-        </nav>
+        
+
+        <div className="collapse navbar-collapse" id="templateux-navbar-nav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item"><a className="nav-link" href="#section-home">Home</a></li>
+            <li className="nav-item"><a className="nav-link" href="#section-about">About</a></li>
+            <li className="nav-item"><a className="nav-link" href="#section-team">Team</a></li>
+            <li className="nav-item"><a className="nav-link" href="#section-rooms">Rooms</a></li>
+            <li className="nav-item"><a className="nav-link" href="#section-menus">Menus</a></li>
+            <li className="nav-item"><a className="nav-link" href="#section-events">Events</a></li>
+            <li className="nav-item"><a className="nav-link" href="#section-contact">Contact</a></li>
+            <li className="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a className="nav-link" href="#" target="_blank"><span className="pb_rounded-4 px-4 rounded">Get Started</span></a></li>
+          </ul>
+        </div>
       </div>
-    </header>
-
-
-
-
-
-
-    <section className=" slider_section position-relative">
-      <div className="detail-box">
-        <div className="row">
-          <div className="col-md-8 col-lg-6 mx-auto">
-            <h1>
-              Book Now <br />
-              Ship Travel Agency
-            </h1>
-            <p>
-              dummy text of the printing and typesetting industry. Lorem Ipsum has been thedummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            </p>
-            <div>
-              <a href="#">
-                Book now
-              </a>
+    </nav>
+    <section className="site-hero overlay" style={{ backgroundImage: `url(src/assets/images/hero_5.jpg)` }} data-stellar-background-ratio="0.5" id="section-home">
+        <div className="container">
+          <div className="row site-hero-inner justify-content-center align-items-center">
+            <div className="col-md-10 text-center" data-aos="fade-up">
+              <h1 className="heading">Stay With Us &amp; Relax</h1>
             </div>
           </div>
         </div>
-      </div>
-      <div className="img-box">
-        <div className="play_btn">
-          <a href="#">
-            <img src="src/assets/images/play.png" alt="" />
-          </a>
-        </div>
-        <img src="src/assets/images/slider-img.png" className="slider-img" alt="" />
-      </div>
-    </section>
 
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section className="book_section ">
-  <div className="container">
-    <div className="row">
-      <div className="col">
-        <div className="heading_container">
-          <h2>
-            Book Now Your Ticket
-          </h2>
-          <p>
-            dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          </p>
-        </div>
-        <form>
-          <div className="form-row ">
-            <div className="form-group col-lg-4">
-              <label >Where</label>
-              <input type="text" className="form-control" id="inputAddress1" placeholder="1234 Main St"/>
-            </div>
-            <div className="form-group col-lg-4">
-              <label >To</label>
-              <input type="text" className="form-control" id="inputAddress2" placeholder="1234 Main St"/>
-            </div>
-            <div className="form-group col-lg-4">
-              <label>Email</label>
-              <input type="email" className="form-control" id="inputEmail4"/>
-            </div>
+        <a className="mouse smoothscroll" href="#next" >
+          <div className="mouse-icon">
+            <span className="mouse-wheel"></span>
           </div>
-          <div className="form-row ">
-            <div className="form-group col-lg-4">
-              <label >Date</label>
-              <input type="date" className="form-control" id="inputDate" placeholder="1234 Main St"/>
-            </div>
-            <div className="form-group col-lg-4">
-              <label >Price</label>
-              <input type="text" className="form-control" id="inputPrice" placeholder="1234 Main St"/>
-            </div>
-            <div className="form-group col-lg-4">
-              <label >Phone Number</label>
-              <input type="text" className="form-control" id="inputPhone"/>
-            </div>
-          </div>
-          <div className="d-flex justify-content-center">
-            <button type="submit" className="btn ">Book Now</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+        </a>
+      </section>
     </div>
   )
 }
